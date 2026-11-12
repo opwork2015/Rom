@@ -1,14 +1,14 @@
-LOCAL_PATH := device/samsung/j5xnlte
-
-# Architecture (معمارية المعالج الأساسية لجهاز J5 بمعالج Snapdragon 410)
+# Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 
-# Inherit from common
+# Inherit from common board config
 include device/samsung/j5x-common/BoardConfigCommon.mk
+
+LOCAL_PATH := device/samsung/j5xnlte
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := j5xnlte
