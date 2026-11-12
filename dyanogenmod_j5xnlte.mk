@@ -1,6 +1,6 @@
 
 # Inherit from common
-$(call inherit-product, device/samsung/j5x-common/dyanogenmod.mk)
+$(call inherit-product, device/samsung/j5x-common/dyanogenmod_j5xnlte.mk)
 
 $(call inherit-product, device/samsung/j5xnlte/device.mk)
 
