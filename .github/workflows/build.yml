@@ -32,11 +32,11 @@ jobs:
         repo init -u https://github.com/LineageOS/android.git -b lineage-15.1 --depth=1
         repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
-    - name: Clone Device Tree
+        - name: Clone Device Tree
       run: |
         cd android
-        git clone https://github.com/LineageOS/android_device_samsung_j5x-common device/samsung/j5x-common
-        git clone https://github.com/${{ github.repository }} device/samsung/j5xnlte
+        git clone https://github.com/LineageOS/android_device_samsung_j5x-common.git device/samsung/j5x-common
+        git clone https://github.com/${{ github.repository }}.git device/samsung/j5xnlte
 
     - name: Build Dyanogenmod ROM
       run: |
