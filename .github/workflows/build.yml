@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Build Environment
       run: |
@@ -45,7 +45,7 @@ jobs:
         mka bacon -j$(nproc --all)
 
     - name: Upload Built ROM
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Dyanogenmod-ROM-j5xnlte
         path: android/out/target/product/j5xnlte/*.zip
